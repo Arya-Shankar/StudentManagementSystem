@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(max_length=254, unique=True)),
                 ('user_type', models.CharField(choices=[(1, 'HOD'), (2, 'Staff'), (3, 'Student')], default=1, max_length=1)),
                 ('gender', models.CharField(choices=[('M', 'Male'), ('F', 'Female')], max_length=1)),
-                ('profile_pic', models.ImageField(upload_to='')),
+                # ('profile_pic', models.ImageField(upload_to='')),
                 ('address', models.TextField()),
                 ('fcm_token', models.TextField(default='')),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
